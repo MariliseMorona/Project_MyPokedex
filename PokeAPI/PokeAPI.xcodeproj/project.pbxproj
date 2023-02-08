@@ -18,6 +18,8 @@
 		484F67AD2994650F00A12322 /* Rajdhani-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484F67A72994650E00A12322 /* Rajdhani-Bold.ttf */; };
 		484F67AE2994650F00A12322 /* Rajdhani-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484F67A82994650E00A12322 /* Rajdhani-Medium.ttf */; };
 		484F67AF2994650F00A12322 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 484F67A92994650F00A12322 /* OFL.txt */; };
+		484F67B229946C0200A12322 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 484F67B129946C0200A12322 /* SnapKit */; };
+		484F67B429946C0200A12322 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 484F67B329946C0200A12322 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484F67B229946C0200A12322 /* SnapKit in Frameworks */,
+				484F67B429946C0200A12322 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +134,10 @@
 			dependencies = (
 			);
 			name = PokeAPI;
+			packageProductDependencies = (
+				484F67B129946C0200A12322 /* SnapKit */,
+				484F67B329946C0200A12322 /* SnapKit-Dynamic */,
+			);
 			productName = PokeAPI;
 			productReference = 484F6785299458C300A12322 /* PokeAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +166,9 @@
 				Base,
 			);
 			mainGroup = 484F677C299458C200A12322;
+			packageReferences = (
+				484F67B029946C0200A12322 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 484F6786299458C300A12322 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -400,6 +411,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		484F67B029946C0200A12322 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		484F67B129946C0200A12322 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 484F67B029946C0200A12322 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		484F67B329946C0200A12322 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 484F67B029946C0200A12322 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		484F6791299458C300A12322 /* PokeAPI.xcdatamodeld */ = {
