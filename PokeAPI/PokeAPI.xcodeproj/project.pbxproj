@@ -12,6 +12,12 @@
 		484F6793299458C300A12322 /* PokeAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 484F6791299458C300A12322 /* PokeAPI.xcdatamodeld */; };
 		484F6795299458C400A12322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484F6794299458C400A12322 /* Assets.xcassets */; };
 		484F6798299458C400A12322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484F6796299458C400A12322 /* LaunchScreen.storyboard */; };
+		484F67AA2994650F00A12322 /* Rajdhani-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484F67A42994650E00A12322 /* Rajdhani-Regular.ttf */; };
+		484F67AB2994650F00A12322 /* Rajdhani-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484F67A52994650E00A12322 /* Rajdhani-SemiBold.ttf */; };
+		484F67AC2994650F00A12322 /* Rajdhani-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484F67A62994650E00A12322 /* Rajdhani-Light.ttf */; };
+		484F67AD2994650F00A12322 /* Rajdhani-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484F67A72994650E00A12322 /* Rajdhani-Bold.ttf */; };
+		484F67AE2994650F00A12322 /* Rajdhani-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484F67A82994650E00A12322 /* Rajdhani-Medium.ttf */; };
+		484F67AF2994650F00A12322 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 484F67A92994650F00A12322 /* OFL.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		484F6794299458C400A12322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484F6797299458C400A12322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484F6799299458C400A12322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484F67A42994650E00A12322 /* Rajdhani-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Regular.ttf"; sourceTree = "<group>"; };
+		484F67A52994650E00A12322 /* Rajdhani-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-SemiBold.ttf"; sourceTree = "<group>"; };
+		484F67A62994650E00A12322 /* Rajdhani-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Light.ttf"; sourceTree = "<group>"; };
+		484F67A72994650E00A12322 /* Rajdhani-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Bold.ttf"; sourceTree = "<group>"; };
+		484F67A82994650E00A12322 /* Rajdhani-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Medium.ttf"; sourceTree = "<group>"; };
+		484F67A92994650F00A12322 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +103,12 @@
 		484F67A229945CF600A12322 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				484F67A92994650F00A12322 /* OFL.txt */,
+				484F67A72994650E00A12322 /* Rajdhani-Bold.ttf */,
+				484F67A62994650E00A12322 /* Rajdhani-Light.ttf */,
+				484F67A82994650E00A12322 /* Rajdhani-Medium.ttf */,
+				484F67A42994650E00A12322 /* Rajdhani-Regular.ttf */,
+				484F67A52994650E00A12322 /* Rajdhani-SemiBold.ttf */,
 				484F6794299458C400A12322 /* Assets.xcassets */,
 			);
 			path = Commons;
@@ -154,8 +172,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484F67AD2994650F00A12322 /* Rajdhani-Bold.ttf in Resources */,
 				484F6798299458C400A12322 /* LaunchScreen.storyboard in Resources */,
+				484F67AC2994650F00A12322 /* Rajdhani-Light.ttf in Resources */,
 				484F6795299458C400A12322 /* Assets.xcassets in Resources */,
+				484F67AE2994650F00A12322 /* Rajdhani-Medium.ttf in Resources */,
+				484F67AB2994650F00A12322 /* Rajdhani-SemiBold.ttf in Resources */,
+				484F67AF2994650F00A12322 /* OFL.txt in Resources */,
+				484F67AA2994650F00A12322 /* Rajdhani-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +336,7 @@
 				INFOPLIST_FILE = PokeAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +364,7 @@
 				INFOPLIST_FILE = PokeAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
