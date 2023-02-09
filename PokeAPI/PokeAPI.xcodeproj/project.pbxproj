@@ -18,8 +18,13 @@
 		484F67AD2994650F00A12322 /* Rajdhani-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484F67A72994650E00A12322 /* Rajdhani-Bold.ttf */; };
 		484F67AE2994650F00A12322 /* Rajdhani-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 484F67A82994650E00A12322 /* Rajdhani-Medium.ttf */; };
 		484F67AF2994650F00A12322 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 484F67A92994650F00A12322 /* OFL.txt */; };
-		484F67B229946C0200A12322 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 484F67B129946C0200A12322 /* SnapKit */; };
-		484F67B429946C0200A12322 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 484F67B329946C0200A12322 /* SnapKit-Dynamic */; };
+		484F67B629946ECE00A12322 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67B529946ECE00A12322 /* Home.swift */; };
+		484F67B829946F2400A12322 /* CodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67B729946F2400A12322 /* CodableView.swift */; };
+		484F67BB2994704D00A12322 /* SingleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67BA2994704D00A12322 /* SingleTableView.swift */; };
+		484F67BD2994725E00A12322 /* SimpleTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67BC2994725E00A12322 /* SimpleTextTableViewCell.swift */; };
+		484F67BF299474C100A12322 /* ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67BE299474C100A12322 /* ext+String.swift */; };
+		484F67C12994754B00A12322 /* ext+Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67C02994754B00A12322 /* ext+Fonts.swift */; };
+		484F67C3299475E600A12322 /* ext-Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67C2299475E600A12322 /* ext-Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,13 @@
 		484F67A72994650E00A12322 /* Rajdhani-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Bold.ttf"; sourceTree = "<group>"; };
 		484F67A82994650E00A12322 /* Rajdhani-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Medium.ttf"; sourceTree = "<group>"; };
 		484F67A92994650F00A12322 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		484F67B529946ECE00A12322 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		484F67B729946F2400A12322 /* CodableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableView.swift; sourceTree = "<group>"; };
+		484F67BA2994704D00A12322 /* SingleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTableView.swift; sourceTree = "<group>"; };
+		484F67BC2994725E00A12322 /* SimpleTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextTableViewCell.swift; sourceTree = "<group>"; };
+		484F67BE299474C100A12322 /* ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext+String.swift"; sourceTree = "<group>"; };
+		484F67C02994754B00A12322 /* ext+Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext+Fonts.swift"; sourceTree = "<group>"; };
+		484F67C2299475E600A12322 /* ext-Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext-Colors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,8 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				484F67B229946C0200A12322 /* SnapKit in Frameworks */,
-				484F67B429946C0200A12322 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +93,10 @@
 		484F679F29945C8D00A12322 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				484F67B92994701900A12322 /* Components */,
 				484F67A229945CF600A12322 /* Commons */,
 				484F6796299458C400A12322 /* LaunchScreen.storyboard */,
+				484F67B529946ECE00A12322 /* Home.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,8 +126,21 @@
 				484F67A42994650E00A12322 /* Rajdhani-Regular.ttf */,
 				484F67A52994650E00A12322 /* Rajdhani-SemiBold.ttf */,
 				484F6794299458C400A12322 /* Assets.xcassets */,
+				484F67B729946F2400A12322 /* CodableView.swift */,
+				484F67C02994754B00A12322 /* ext+Fonts.swift */,
+				484F67BE299474C100A12322 /* ext+String.swift */,
+				484F67C2299475E600A12322 /* ext-Colors.swift */,
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		484F67B92994701900A12322 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				484F67BA2994704D00A12322 /* SingleTableView.swift */,
+				484F67BC2994725E00A12322 /* SimpleTextTableViewCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +160,6 @@
 			);
 			name = PokeAPI;
 			packageProductDependencies = (
-				484F67B129946C0200A12322 /* SnapKit */,
-				484F67B329946C0200A12322 /* SnapKit-Dynamic */,
 			);
 			productName = PokeAPI;
 			productReference = 484F6785299458C300A12322 /* PokeAPI.app */;
@@ -167,7 +190,6 @@
 			);
 			mainGroup = 484F677C299458C200A12322;
 			packageReferences = (
-				484F67B029946C0200A12322 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 484F6786299458C300A12322 /* Products */;
 			projectDirPath = "";
@@ -201,8 +223,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484F67BD2994725E00A12322 /* SimpleTextTableViewCell.swift in Sources */,
 				484F678D299458C300A12322 /* HomeViewController.swift in Sources */,
+				484F67C12994754B00A12322 /* ext+Fonts.swift in Sources */,
+				484F67BB2994704D00A12322 /* SingleTableView.swift in Sources */,
 				484F6793299458C300A12322 /* PokeAPI.xcdatamodeld in Sources */,
+				484F67C3299475E600A12322 /* ext-Colors.swift in Sources */,
+				484F67B629946ECE00A12322 /* Home.swift in Sources */,
+				484F67B829946F2400A12322 /* CodableView.swift in Sources */,
+				484F67BF299474C100A12322 /* ext+String.swift in Sources */,
 				484F6789299458C300A12322 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,30 +440,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		484F67B029946C0200A12322 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		484F67B129946C0200A12322 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 484F67B029946C0200A12322 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		484F67B329946C0200A12322 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 484F67B029946C0200A12322 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		484F6791299458C300A12322 /* PokeAPI.xcdatamodeld */ = {
