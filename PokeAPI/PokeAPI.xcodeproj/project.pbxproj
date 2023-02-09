@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		484F67BF299474C100A12322 /* ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67BE299474C100A12322 /* ext+String.swift */; };
 		484F67C12994754B00A12322 /* ext+Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67C02994754B00A12322 /* ext+Fonts.swift */; };
 		484F67C3299475E600A12322 /* ext-Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67C2299475E600A12322 /* ext-Colors.swift */; };
+		9475C09A9AC9743DA0F16373 /* libPods-PokeAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D115CC6148B665984C5EA6 /* libPods-PokeAPI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,9 @@
 		484F67BE299474C100A12322 /* ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext+String.swift"; sourceTree = "<group>"; };
 		484F67C02994754B00A12322 /* ext+Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext+Fonts.swift"; sourceTree = "<group>"; };
 		484F67C2299475E600A12322 /* ext-Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext-Colors.swift"; sourceTree = "<group>"; };
+		7C5D10C7E0E9D166DEE17953 /* Pods-PokeAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeAPI.debug.xcconfig"; path = "Target Support Files/Pods-PokeAPI/Pods-PokeAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		A4D115CC6148B665984C5EA6 /* libPods-PokeAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokeAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A3E8200A0124C67666278C /* Pods-PokeAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeAPI.release.xcconfig"; path = "Target Support Files/Pods-PokeAPI/Pods-PokeAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9475C09A9AC9743DA0F16373 /* libPods-PokeAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 			children = (
 				484F6787299458C300A12322 /* PokeAPI */,
 				484F6786299458C300A12322 /* Products */,
+				D3E678742AC7EBEB53A5B744 /* Pods */,
+				EC68238B5528300B12FC4973 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +150,24 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		D3E678742AC7EBEB53A5B744 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C5D10C7E0E9D166DEE17953 /* Pods-PokeAPI.debug.xcconfig */,
+				C7A3E8200A0124C67666278C /* Pods-PokeAPI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC68238B5528300B12FC4973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4D115CC6148B665984C5EA6 /* libPods-PokeAPI.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 484F679C299458C400A12322 /* Build configuration list for PBXNativeTarget "PokeAPI" */;
 			buildPhases = (
+				E874CE0682A7C0D8F4F8000E /* [CP] Check Pods Manifest.lock */,
 				484F6781299458C300A12322 /* Sources */,
 				484F6782299458C300A12322 /* Frameworks */,
 				484F6783299458C300A12322 /* Resources */,
@@ -159,8 +185,6 @@
 			dependencies = (
 			);
 			name = PokeAPI;
-			packageProductDependencies = (
-			);
 			productName = PokeAPI;
 			productReference = 484F6785299458C300A12322 /* PokeAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -181,7 +205,7 @@
 				};
 			};
 			buildConfigurationList = 484F6780299458C200A12322 /* Build configuration list for PBXProject "PokeAPI" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -189,8 +213,6 @@
 				Base,
 			);
 			mainGroup = 484F677C299458C200A12322;
-			packageReferences = (
-			);
 			productRefGroup = 484F6786299458C300A12322 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -217,6 +239,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E874CE0682A7C0D8F4F8000E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PokeAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		484F6781299458C300A12322 /* Sources */ = {
@@ -366,6 +413,7 @@
 		};
 		484F679D299458C400A12322 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C5D10C7E0E9D166DEE17953 /* Pods-PokeAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -393,6 +441,7 @@
 		};
 		484F679E299458C400A12322 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A3E8200A0124C67666278C /* Pods-PokeAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
