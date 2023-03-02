@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14E741BA1C83BB11A8051932 /* libPods-PokeAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F44F7060D1DA415B8446141 /* libPods-PokeAPI.a */; };
+		4823DB3D29B0235E0036E71D /* CompostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823DB3C29B0235E0036E71D /* CompostTableViewCell.swift */; };
+		4823DB3F29B023E20036E71D /* CardCollectionVewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823DB3E29B023E20036E71D /* CardCollectionVewCell.swift */; };
+		4823DB4129B0311C0036E71D /* SearchBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823DB4029B0311C0036E71D /* SearchBarTableViewCell.swift */; };
 		484F6789299458C300A12322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F6788299458C300A12322 /* AppDelegate.swift */; };
 		484F678D299458C300A12322 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F678C299458C300A12322 /* HomeViewController.swift */; };
 		484F6793299458C300A12322 /* PokeAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 484F6791299458C300A12322 /* PokeAPI.xcdatamodeld */; };
@@ -25,10 +29,13 @@
 		484F67BF299474C100A12322 /* ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67BE299474C100A12322 /* ext+String.swift */; };
 		484F67C12994754B00A12322 /* ext+Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67C02994754B00A12322 /* ext+Fonts.swift */; };
 		484F67C3299475E600A12322 /* ext-Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F67C2299475E600A12322 /* ext-Colors.swift */; };
-		9475C09A9AC9743DA0F16373 /* libPods-PokeAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D115CC6148B665984C5EA6 /* libPods-PokeAPI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07B490E3A6AB26C7A3FF2811 /* Pods-PokeAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeAPI.release.xcconfig"; path = "Target Support Files/Pods-PokeAPI/Pods-PokeAPI.release.xcconfig"; sourceTree = "<group>"; };
+		4823DB3C29B0235E0036E71D /* CompostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostTableViewCell.swift; sourceTree = "<group>"; };
+		4823DB3E29B023E20036E71D /* CardCollectionVewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionVewCell.swift; sourceTree = "<group>"; };
+		4823DB4029B0311C0036E71D /* SearchBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarTableViewCell.swift; sourceTree = "<group>"; };
 		484F6785299458C300A12322 /* PokeAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		484F6788299458C300A12322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		484F678C299458C300A12322 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -49,9 +56,8 @@
 		484F67BE299474C100A12322 /* ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext+String.swift"; sourceTree = "<group>"; };
 		484F67C02994754B00A12322 /* ext+Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext+Fonts.swift"; sourceTree = "<group>"; };
 		484F67C2299475E600A12322 /* ext-Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext-Colors.swift"; sourceTree = "<group>"; };
-		7C5D10C7E0E9D166DEE17953 /* Pods-PokeAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeAPI.debug.xcconfig"; path = "Target Support Files/Pods-PokeAPI/Pods-PokeAPI.debug.xcconfig"; sourceTree = "<group>"; };
-		A4D115CC6148B665984C5EA6 /* libPods-PokeAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokeAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7A3E8200A0124C67666278C /* Pods-PokeAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeAPI.release.xcconfig"; path = "Target Support Files/Pods-PokeAPI/Pods-PokeAPI.release.xcconfig"; sourceTree = "<group>"; };
+		4F44F7060D1DA415B8446141 /* libPods-PokeAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokeAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C78E6356462B71A9B7454F08 /* Pods-PokeAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeAPI.debug.xcconfig"; path = "Target Support Files/Pods-PokeAPI/Pods-PokeAPI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,20 +65,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9475C09A9AC9743DA0F16373 /* libPods-PokeAPI.a in Frameworks */,
+				14E741BA1C83BB11A8051932 /* libPods-PokeAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4823DB3A29B015A00036E71D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				484F67A92994650F00A12322 /* OFL.txt */,
+				484F67A72994650E00A12322 /* Rajdhani-Bold.ttf */,
+				484F67A82994650E00A12322 /* Rajdhani-Medium.ttf */,
+				484F67A52994650E00A12322 /* Rajdhani-SemiBold.ttf */,
+				484F67A42994650E00A12322 /* Rajdhani-Regular.ttf */,
+				484F67A62994650E00A12322 /* Rajdhani-Light.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		484F677C299458C200A12322 = {
 			isa = PBXGroup;
 			children = (
 				484F6787299458C300A12322 /* PokeAPI */,
 				484F6786299458C300A12322 /* Products */,
-				D3E678742AC7EBEB53A5B744 /* Pods */,
-				EC68238B5528300B12FC4973 /* Frameworks */,
+				B242AA6613F45AB64E84C1BE /* Pods */,
+				F4DAFAB68AC1FFC7D65A3F1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +106,7 @@
 		484F6787299458C300A12322 /* PokeAPI */ = {
 			isa = PBXGroup;
 			children = (
+				484F67A229945CF600A12322 /* Commons */,
 				484F67A129945CD900A12322 /* Controller */,
 				484F67A029945CD200A12322 /* Model */,
 				484F679F29945C8D00A12322 /* View */,
@@ -101,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				484F67B92994701900A12322 /* Components */,
-				484F67A229945CF600A12322 /* Commons */,
 				484F6796299458C400A12322 /* LaunchScreen.storyboard */,
 				484F67B529946ECE00A12322 /* Home.swift */,
 			);
@@ -126,12 +145,7 @@
 		484F67A229945CF600A12322 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				484F67A92994650F00A12322 /* OFL.txt */,
-				484F67A72994650E00A12322 /* Rajdhani-Bold.ttf */,
-				484F67A62994650E00A12322 /* Rajdhani-Light.ttf */,
-				484F67A82994650E00A12322 /* Rajdhani-Medium.ttf */,
-				484F67A42994650E00A12322 /* Rajdhani-Regular.ttf */,
-				484F67A52994650E00A12322 /* Rajdhani-SemiBold.ttf */,
+				4823DB3A29B015A00036E71D /* fonts */,
 				484F6794299458C400A12322 /* Assets.xcassets */,
 				484F67B729946F2400A12322 /* CodableView.swift */,
 				484F67C02994754B00A12322 /* ext+Fonts.swift */,
@@ -146,24 +160,26 @@
 			children = (
 				484F67BA2994704D00A12322 /* SingleTableView.swift */,
 				484F67BC2994725E00A12322 /* SimpleTextTableViewCell.swift */,
+				4823DB3C29B0235E0036E71D /* CompostTableViewCell.swift */,
+				4823DB3E29B023E20036E71D /* CardCollectionVewCell.swift */,
+				4823DB4029B0311C0036E71D /* SearchBarTableViewCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		D3E678742AC7EBEB53A5B744 /* Pods */ = {
+		B242AA6613F45AB64E84C1BE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7C5D10C7E0E9D166DEE17953 /* Pods-PokeAPI.debug.xcconfig */,
-				C7A3E8200A0124C67666278C /* Pods-PokeAPI.release.xcconfig */,
+				C78E6356462B71A9B7454F08 /* Pods-PokeAPI.debug.xcconfig */,
+				07B490E3A6AB26C7A3FF2811 /* Pods-PokeAPI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		EC68238B5528300B12FC4973 /* Frameworks */ = {
+		F4DAFAB68AC1FFC7D65A3F1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A4D115CC6148B665984C5EA6 /* libPods-PokeAPI.a */,
+				4F44F7060D1DA415B8446141 /* libPods-PokeAPI.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,7 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 484F679C299458C400A12322 /* Build configuration list for PBXNativeTarget "PokeAPI" */;
 			buildPhases = (
-				E874CE0682A7C0D8F4F8000E /* [CP] Check Pods Manifest.lock */,
+				12C1A3271FBECA8B95F64ED4 /* [CP] Check Pods Manifest.lock */,
 				484F6781299458C300A12322 /* Sources */,
 				484F6782299458C300A12322 /* Frameworks */,
 				484F6783299458C300A12322 /* Resources */,
@@ -241,7 +257,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E874CE0682A7C0D8F4F8000E /* [CP] Check Pods Manifest.lock */ = {
+		12C1A3271FBECA8B95F64ED4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,10 +287,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				484F67BD2994725E00A12322 /* SimpleTextTableViewCell.swift in Sources */,
+				4823DB3D29B0235E0036E71D /* CompostTableViewCell.swift in Sources */,
 				484F678D299458C300A12322 /* HomeViewController.swift in Sources */,
 				484F67C12994754B00A12322 /* ext+Fonts.swift in Sources */,
 				484F67BB2994704D00A12322 /* SingleTableView.swift in Sources */,
+				4823DB4129B0311C0036E71D /* SearchBarTableViewCell.swift in Sources */,
 				484F6793299458C300A12322 /* PokeAPI.xcdatamodeld in Sources */,
+				4823DB3F29B023E20036E71D /* CardCollectionVewCell.swift in Sources */,
 				484F67C3299475E600A12322 /* ext-Colors.swift in Sources */,
 				484F67B629946ECE00A12322 /* Home.swift in Sources */,
 				484F67B829946F2400A12322 /* CodableView.swift in Sources */,
@@ -413,7 +432,7 @@
 		};
 		484F679D299458C400A12322 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C5D10C7E0E9D166DEE17953 /* Pods-PokeAPI.debug.xcconfig */;
+			baseConfigurationReference = C78E6356462B71A9B7454F08 /* Pods-PokeAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -441,7 +460,7 @@
 		};
 		484F679E299458C400A12322 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7A3E8200A0124C67666278C /* Pods-PokeAPI.release.xcconfig */;
+			baseConfigurationReference = 07B490E3A6AB26C7A3FF2811 /* Pods-PokeAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

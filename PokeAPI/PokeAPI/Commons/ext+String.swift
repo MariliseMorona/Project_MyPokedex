@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
 extension String{
     
-    func htmlForFontWith(size: Int, color: String, align: EnumTextAlign = .center) -> String {
-        return "<div style=\" font-size: \(String(size))px; text-align: \(align.rawValue); font-family: '\(Fonts.rajRegular)'; color:\(color) \">\(self)</div>"
+    
+    func htmlForFontWith(size: Int, color: String, align: EnumTextAlign = .center, type: UIFont.FontType) -> String {
+        return "<div style=\" font-size: \(String(size))px; text-align: \(align.rawValue); font-family: '\(type.getFontName())'; color:\(color) \">\(self)</div>"
     }
     
     var html2AttributedString: NSAttributedString? {
@@ -18,8 +20,7 @@ extension String{
             let data = data(using: .utf8)
             else { return nil }
         do {
-            return try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html,
-                                                                .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil).trailingNewlineChopped
+            return try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil).trailingNewlineChopped
         } catch let error as NSError {
             print(error)
             return  nil

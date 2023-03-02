@@ -24,7 +24,7 @@ extension CodableView {
     func configViews() {}
 }
 
-/// Self-managing CodableView
+
 class UICodableView: UIView, CodableView {
     init() {
         super.init(frame: .zero)
